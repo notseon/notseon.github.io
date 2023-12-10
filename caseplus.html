@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <link rel="stylesheet" href="plus.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+    </style>
+</head>
+<body>
+    <div class="navi">
+        <div class="sub1"></div>
+        <div class="sub2">
+            <div class="sub2-1">
+                <div class="sub2-2">
+                    <div class="pic2">
+                        <a href="main.html"><img src="symbol_1.png"></a></div>
+                </div>
+            </div>
+            <div class="sub2-3">
+                <a href="#">TIME</a>
+                <a href="#">CATEGORY</a>
+                <a href="#">COUNTRY</a>
+                <a href="#">INFINITY</a>
+                <a href="#">PLUS</a>
+            </div>
+        </div>
+        <div class="sub3"></div>
+    </div>
+    <div class="navi">
+        <div class="sub4"></div>
+        <div class="sub5">
+            <div class="sub5-1">
+                <div class="sub5-2">
+                    <div class="pic3"><img src="logo.png"></div>
+                    <a>This page is a random list of 'NOTSEON' events. Click on your favorite collage to check it out</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sub3"></div>
+    </div>
+    <div class="container4">
+        <!-- <h1>PLUS NOTSEON</h1> -->
+        <form id="guestbookForm">
+            <label for="name">CASE NAME</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="message">CONTENT</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="button" onclick="addEntry()">SUBMIT</button>
+        </form>
+
+        <div id="entries">
+            <!-- 방명록 항목이 여기에 추가됩니다. -->
+        </div>
+    </div>
+
+    <script>
+        function addEntry() {
+    var name = document.getElementById("name").value;
+    var message = document.getElementById("message").value;
+
+    if (name && message) {
+        var entry = document.createElement("div");
+        entry.className = "entry";
+        entry.innerHTML = "<strong>" + name + ":</strong> " + message;
+
+        document.getElementById("entries").appendChild(entry);
+
+        // Clear the form fields
+        document.getElementById("name").value = "";
+        document.getElementById("message").value = "";
+    } else {
+        alert("PLEASE WRITE CASENAME.");
+    }
+    }
+    </script>
+</body>
+</html>
