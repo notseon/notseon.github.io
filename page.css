@@ -7,6 +7,7 @@
 body{
     overflow-x: hidden;
     overflow-y: hidden;
+    padding-bottom: 56.25%;
 }
 
 
@@ -23,6 +24,27 @@ body{
 }
 @media(min-width:600px){
     .sub-text{
+        display: none;
+    }
+}
+.sub2-text {
+    
+    position: absolute;
+    top: 44%;
+    transform: translate(-50%);
+    width: 80%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;;
+
+}
+@media(min-width:1150px){
+    .sub2-text{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    .sub2-text{
         display: none;
     }
 }
@@ -86,7 +108,7 @@ body{
 
 }
 
-.item2-2 {
+.item2-2 a {
 
     width: 60px;
     height: 60px;
@@ -95,19 +117,25 @@ body{
     display: flex;
 
 }
+.item2-2 a>img {
+    width: 100%;
+    padding: 8px;
+}
+
 
 .item2-3 {
-    width: 44%;
+    width: 26vw;
     height: 60px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 
 .item2-3 a {
-    font-size: 14px;
+    font-size: 12px;
     padding: 16px;
     box-sizing: border-box;
     text-decoration: none;
@@ -124,6 +152,30 @@ body{
     background-color: #ffffff;
 
 }
+@media (max-width:1600px){
+    .item2-3 {
+        width: 26vw;
+        height: 60px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    .item2-3 a {
+        font-size: 11px;
+        padding: 13px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    
+
+}
+
 
 .item4 {
 
@@ -297,12 +349,12 @@ body{
     
 } */
 .container2 {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: none;
     display: flex;
 }
-@media ( max-width:600px){
+@media ( max-width:1150px){
     .container2{
         display: none;
     }
@@ -311,17 +363,16 @@ body{
 .slide {
     width: 100%;
     height: 300px;
-    /* border: 4px solid red; */
+    /* none 4px solid red; */
     margin-top: 1%;
 }
 
 .item {
-    width: 200px;
+    width: 100%;
     height: 300px;
     position: absolute;
     display: inline-block;
     transition: 0.5s;
-    /* border: 4px solid red; */
     justify-content: center;
 }
 .slide .item:nth-child(1){
@@ -335,7 +386,7 @@ body{
 }
 .slide .item:nth-child(3){
     left: 20%;
-    /* border: 4px solid red; */
+    
 }
 
 .slide .item:nth-child(4) {
@@ -386,31 +437,49 @@ body{
 
 .item .content {
     position: absolute;
-    top: -34%;
-    left: 6%;
-    width: 700px;
+    top: -110%;
+    left: 0%;
+    width: 59vw;
+    height: 100%;
     text-align: left;
     color: #000000;
     font-family: 'Lato', sans-serif;;
     display: none;
     text-decoration: none;
     
+    
 }
-@media ( max-width: 1700px ) {
+.s-text {
+    position: absolute;
+    right: 2px;
+    width: 24vw;
+    bottom: 0px;
+    /* display: flex; */
+    color: #000000;
+    font-family: 'Lato', sans-serif;;
+    
+    
+    
+}
+/* @media ( max-width: 1700px ) {
 .s-text {
     position: absolute;
     right: 2px;
     width: 360px;
     bottom: 0px;
-    /* display: flex; */
+    
     color: #000000;
     font-family: 'Lato', sans-serif;;
-    /* border: solid 4px red; */
+    
     
     
 }
-}
-@media ( max-width: 1700px ) {
+} */
+
+
+
+
+/* @media ( max-width: 1700px ) {
     .item .content {
         position: absolute;
         top: -88%;
@@ -422,25 +491,55 @@ body{
         font-family: 'Lato', sans-serif;;
         display: none;
         text-decoration: none;
-        /* border: solid 4px red; */
+
         text-overflow: hidden;
         overflow: hidden;
        
     }
-  }
-  @media ( max-width: 1400px ) {
+  } */
+  /* @media ( max-width: 1300px ) {
     .item .content {
         position: absolute;
-        top: -24%;
+        top: -88%;
         left: 7%;
-        width: 420px;
+        width: 740px;
         text-align: left;
         color: #000000;
         font-family: 'Lato', sans-serif;;
         display: none;
         text-decoration: none;
+        border: solid 4px red;
     }
   }
+  @media ( max-width: 1100px ) {
+    .item .content {
+        position: absolute;
+        top: -88%;
+        left: 7%;
+        width: 620px;
+        text-align: left;
+        color: #000000;
+        font-family: 'Lato', sans-serif;;
+        display: none;
+        text-decoration: none;
+        border: solid 4px red;
+    }
+  }
+
+  @media ( max-width: 1000px ) {
+    .item .content {
+        position: absolute;
+        top: -88%;
+        left: 7%;
+        width: 560px;
+        text-align: left;
+        color: #000000;
+        font-family: 'Lato', sans-serif;;
+        display: none;
+        text-decoration: none;
+        border: solid 4px red;
+    }
+  } */
 
 .slide .item:nth-child(3) .content {
     display: block;
@@ -448,12 +547,17 @@ body{
 
 
 .content .name {
-    font-size: 60px;
-    /* text-transform: uppercase; */
+    font-size: 48px;
+    text-transform: uppercase;
     opacity: 0;
     animation: animate 0.1s ease 1 forwards;
+    bottom: 0px;
+    left: 18px;
+    width: 32vw;
+    position: absolute;
+    
 }
-@media ( max-width: 1700px ) {
+/* @media ( max-width: 1700px ) {
     .content .name {
         font-size: 48px;
         text-transform: uppercase;
@@ -464,16 +568,46 @@ body{
         width: 480px;
         position: absolute;
     }
-  }
-  @media ( max-width: 1400px ) {
+  } */
+
+  /* @media ( max-width: 1300px ) {
     .content .name {
-        font-size: 36px;
+        font-size: 32px;
         text-transform: uppercase;
         opacity: 0;
         animation: animate 0.1s ease 1 forwards;
+        bottom: 0px;
+        left: 1%;
+        width: 400px;
+        position: absolute;
     }
   }
-
+  @media ( max-width: 1100px ) {
+    .content .name {
+        font-size: 30px;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: animate 0.1s ease 1 forwards;
+        bottom: 0px;
+        left: 1%;
+        width: 320px;
+        position: absolute;
+    }
+  }
+ 
+  @media ( max-width: 1000px ) {
+    .content .name {
+        font-size: 28px;
+        text-transform: uppercase;
+        opacity: 0;
+        animation: animate 0.1s ease 1 forwards;
+        bottom: 0px;
+        left: 1%;
+        width: 290px;
+        position: absolute;
+        
+    }
+  } */
 .content .des {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -561,7 +695,7 @@ body{
 
 
 
-@media ( max-width: 600px ){
+@media ( max-width: 1150px ){
     .a {
         text-decoration: none;
         color: #fff;

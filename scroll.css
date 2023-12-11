@@ -3,7 +3,7 @@ body {
     overflow: hidden;
 }
 
-#container {
+#container2 {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -19,7 +19,7 @@ body {
     background-color: black;
     position: relative;
 }
-.item a{
+.box1 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -31,10 +31,10 @@ body {
     display: flex;
 }
 
-.item a>img {
+.box1 a>img {
     width: 100%;
 }
-.item2 a{
+.box2 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -46,10 +46,10 @@ body {
     display: flex;
 }
 
-.item2 a>img {
+.box2 a>img {
     width: 100%;
 }
-.item3 a{
+.box3 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -61,10 +61,10 @@ body {
     display: flex;
 }
 
-.item3 a>img {
+.box3 a>img {
     width: 100%;
 }
-.item4 a{
+.box4 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -76,10 +76,10 @@ body {
     display: flex;
 }
 
-.item4 a>img {
+.box4 a>img {
     width: 100%;
 }
-.item5 a{
+.box5 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -91,10 +91,10 @@ body {
     display: flex;
 }
 
-.item5 a>img {
+.box5 a>img {
     width: 100%;
 }
-.item6 a{
+.box6 a{
     width: 240px;
     height: 300px;
     padding: 8px;
@@ -106,10 +106,25 @@ body {
     display: flex;
 }
 
-.item6 a>img {
+.box6 a>img {
     width: 100%;
 }
-.item {
+.box7 a{
+    width: 240px;
+    height: 300px;
+    padding: 8px;
+    margin-left: 60px;
+    margin-top: 30px;
+    /* border: solid 4px red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box7 a>img {
+    width: 100%;
+}
+.box1 {
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -117,7 +132,7 @@ body {
     /* border: solid 4px red; */
     position: relative;
 }
-.item2{
+.box2{
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -125,7 +140,7 @@ body {
     /* border: solid 4px red; */
     position: relative;
 }
-.item3{
+.box3{
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -133,7 +148,7 @@ body {
     /* border: solid 4px red; */
     position: relative;
 }
-.item4{
+.box4{
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -141,7 +156,7 @@ body {
     /* border: solid 4px red; */
     position: relative;
 }
-.item5{
+.box5{
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -149,7 +164,15 @@ body {
     /* border: solid 4px red; */
     position: relative;
 }
-.item6{
+.box6{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    /* border: solid 4px red; */
+    position: relative;
+}
+.box7{
     width: 100%;
     height: 400px;
     background-color: rgb(255, 255, 255);
@@ -296,3 +319,235 @@ body {
 }
 
 
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 56.25%;
+}
+
+
+.sub-text {
+    
+    position: absolute;
+    top: 44%;
+    transform: translate(-50%);
+    width: 80%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;;
+
+}
+@media(min-width:600px){
+    .sub-text{
+        display: none;
+    }
+}
+.sub2-text {
+    
+    position: absolute;
+    top: 44%;
+    transform: translate(-50%);
+    width: 80%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;;
+
+}
+@media(min-width:1150px){
+    .sub2-text{
+        display: none;
+    }
+}
+@media(max-width:600px){
+    .sub2-text{
+        display: none;
+    }
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    unicode-range: U+AC00-D7AF;
+}
+
+.a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #000000;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.item1 {
+    margin: 0px;
+    width: 20%;
+    height: 60px;
+    border-right: 1px solid #000000;
+    background-color: #ffffff;
+
+}
+
+.item2 {
+
+    width: 60%;
+    height: 60px;
+    border-right: 1px solid #000000;
+    background-color: #ffffff;
+    display: flex;
+
+}
+
+.item2-1 {
+    width: 56%;
+    height: 60px;
+    border-right: 1px solid #000000;
+    background-color: #ffffff;
+
+}
+
+.pic a {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+}
+
+.pic a>img {
+    width: 100%;
+
+}
+
+.item2-2 a {
+
+    width: 60px;
+    height: 60px;
+    border-right: 1px solid #000000;
+    background-color: none;
+    display: flex;
+
+}
+.item2-2 a>img {
+    width: 100%;
+    padding: 8px;
+}
+
+.item2-3 {
+    width: 26vw;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.item2-3 a {
+    font-size: 12px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.item3 {
+
+    width: 20%;
+    height: 60px;
+
+    background-color: #ffffff;
+
+}
+@media (max-width:1600px){
+    .item2-3 {
+        width: 26vw;
+        height: 60px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    
+    }
+    .item2-3 a {
+        font-size: 11px;
+        padding: 13px;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: #000000;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    
+
+}
+
+
+.item4 {
+
+    width: 60%;
+    height: 60px;
+    border-right: 1px solid #000000;
+    background-color: #ffffff;
+
+
+}
+
+
+.item4-2 {
+
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.item4-2 a {
+    font-size: 14px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.pic1 {
+    width: 80px;
+    height: 50px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.pic1>img {
+    width: 100%;
+
+}
+
+@media (max-width:1150px){
+    .container{
+        display: none;
+    }
+}
+@media (max-width:1150px){
+    .sub-container{
+        display: none;
+    }
+}

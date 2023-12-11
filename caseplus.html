@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,35 @@
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
     </style>
 </head>
+
 <body>
-    <div class="navi">
-        <div class="sub1"></div>
-        <div class="sub2">
-            <div class="sub2-1">
-                <div class="sub2-2">
-                    <div class="pic2">
-                        <a href="main.html"><img src="symbol_1.png"></a></div>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2">
+            <div class="item2-1">
+                <div class="item2-2">
+                    <a href="index.html"><img src="symbol_1.png"></a>
                 </div>
             </div>
-            <div class="sub2-3">
+            <div class="item2-3">
                 <a href="#">TIME</a>
                 <a href="#">CATEGORY</a>
                 <a href="#">COUNTRY</a>
-                <a href="#">INFINITY</a>
-                <a href="#">PLUS</a>
+                <a href="infinity.html">INFINITY</a>
+                <a href="caseplus.html">PLUS</a>
             </div>
         </div>
-        <div class="sub3"></div>
+        <div class="item3"></div>
     </div>
-    <div class="navi">
-        <div class="sub4"></div>
-        <div class="sub5">
-            <div class="sub5-1">
-                <div class="sub5-2">
-                    <div class="pic3"><img src="logo.png"></div>
-                    <a>This page is a random list of 'NOTSEON' events. Click on your favorite collage to check it out</a>
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item4">
+            <div class="item4-1">
+                <div class="item4-2">
+                    <div class="pic1"><img src="logo.png"></div>
+                    <a>On this main page, you can check out the 'NOTSEON' event at once. We intend to deliver various
+                        and detailed contents for the purpose of easily delivering them through photo scrolling.</a>
 
                 </div>
 
@@ -45,17 +48,18 @@
 
         </div>
 
-        <div class="sub3"></div>
+        <div class="item3"></div>
     </div>
+
     <div class="container4">
         <!-- <h1>PLUS NOTSEON</h1> -->
         <form id="guestbookForm">
             <label for="name">CASE NAME</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="message">CONTENT</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            
+
             <button type="button" onclick="addEntry()">SUBMIT</button>
         </form>
 
@@ -64,25 +68,58 @@
         </div>
     </div>
 
+    <div class="sub-text">
+        <a>모바일에서는 호환되지 않습니다.<br>
+        </a>
+        <a><br>To view the 'NOTSEON' project, please access the address below on the website.<br>
+        </a>
+        <a href="https://notseon.github.io/"><br>"https://notseon.github.io/"</a>
+    </div>
+    <div class="sub2-text">
+        <a>넓은 화면에서 지원합니다. 화면사이즈를 키워주세요.<br>
+        </a>
+        <a><br>To view the 'NOTSEON' project, please access the address below on the website.<br>
+        </a>
+        <a href="https://notseon.github.io/"><br>"https://notseon.github.io/"</a>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+
+        })
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+
+    </script>
+
     <script>
         function addEntry() {
-    var name = document.getElementById("name").value;
-    var message = document.getElementById("message").value;
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
 
-    if (name && message) {
-        var entry = document.createElement("div");
-        entry.className = "entry";
-        entry.innerHTML = "<strong>" + name + ":</strong> " + message;
+            if (name && message) {
+                var entry = document.createElement("div");
+                entry.className = "entry";
+                entry.innerHTML = "<strong>" + name + ":</strong> " + message;
 
-        document.getElementById("entries").appendChild(entry);
+                document.getElementById("entries").appendChild(entry);
 
-        // Clear the form fields
-        document.getElementById("name").value = "";
-        document.getElementById("message").value = "";
-    } else {
-        alert("PLEASE WRITE CASENAME.");
-    }
-    }
+                // Clear the form fields
+                document.getElementById("name").value = "";
+                document.getElementById("message").value = "";
+            } else {
+                alert("PLEASE WRITE CASENAME.");
+            }
+        }
     </script>
 </body>
+
 </html>
