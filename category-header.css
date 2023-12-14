@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    /* unicode-range: U+AC00-D7AF; */
+}
+
+.page-hedaer{
+    border: 1px solid black;
+    border-style: none none solid none;
+}
+
+.frsit-frist-box{
+    border: 1px solid black;
+    border-style: solid none solid none;
+    width: auto;
+    height: 68px;
+}
+
+.first-box{
+    width: 1280px;
+    height: 68px;
+    display: block;
+    margin: auto;
+}
+
+.symbol{
+    float: left;
+    width: 70px;
+    height: 68px;
+    border: 1px solid black;
+    border-style: none solid none solid;
+}
+
+.symbol-img{
+    width: 46px;
+    height: 41.91px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.emty-box01{
+    display: inline-block;
+    width: 698px;
+    height: 68px;
+    border: 1px solid black;
+    border-style: none none none none;
+}
+
+.top-category{
+    float: right;
+    width: 512px;
+    height: 68px;
+    border: 1px solid black;
+    border-style: none solid none solid;
+}
+
+.text-category{
+    display: block;
+    margin: 24px auto auto 54px;
+}
+
+
+.category-margin{
+    margin-right: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.second-box{
+    width: 1280px;
+    height: 96px;
+    border: 1px solid black;
+    border-style: none solid none solid;
+    display: flex;
+    margin: auto;
+}
+
+.logo{
+    height: 96px;
+    width: 160px;
+}
+
+.logo-img{
+    width: 113px;
+    height: 55.49px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.explain-text{
+    display: block;
+    margin-right: 17px;
+    padding-top: 30px;
+}
+
+.content{
+    width: 1920px;
+    height: 816px;
+    /* display: block; */
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+

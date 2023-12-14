@@ -1,0 +1,23 @@
+#image-container {
+    display: flex;
+    overflow-x: auto;
+    cursor: grab;
+    user-select: none;
+    margin-top: 90px;
+    height: 95vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #image {
+    flex-shrink: 0;
+  }
+
+  #image:active {
+    cursor: grabbing;
+  }
+
+  .box  {
+    position: relative;
+    top: -90px;
+  }

@@ -23,11 +23,11 @@
                 </div>
             </div>
             <div class="item2-3">
-                <a href="#">TIME</a>
-                <a href="#">CATEGORY</a>
-                <a href="#">COUNTRY</a>
+                <a href="time.html">TIME</a>
+                <a href="category-v2.html">CATEGORY</a>
+                <a href="01-1.html">COUNTRY</a>
                 <a href="infinity.html">INFINITY</a>
-                <a href="caseplus.html">PLUS</a>
+                <a href="caseplus.html">CREATE</a>
             </div>
         </div>
         <div class="item3"></div>
@@ -39,8 +39,7 @@
             <div class="item4-1">
                 <div class="item4-2">
                     <div class="pic1"><img src="logo.png"></div>
-                    <a>On this main page, you can check out the 'NOTSEON' event at once. We intend to deliver various
-                        and detailed contents for the purpose of easily delivering them through photo scrolling.</a>
+                    <a>Please write down the 'unfamiliar' events you think of.</a>
 
                 </div>
 
@@ -55,10 +54,14 @@
         <!-- <h1>PLUS NOTSEON</h1> -->
         <form id="guestbookForm">
             <label for="name">CASE NAME</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" placeholder="Please add to the 'NOTSEON' incident I found" name="name"
+                required>
+
 
             <label for="message">CONTENT</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message"
+                placeholder="Please write down about the NOTSEON incident I found. If you write down the details, it's better to record the incident. Add and enjoy various NOTSEON events."
+                rows="14" required></textarea>
 
             <button type="button" onclick="addEntry()">SUBMIT</button>
         </form>

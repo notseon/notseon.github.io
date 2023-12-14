@@ -20,11 +20,11 @@ body {
     position: relative;
 }
 .box1 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -35,11 +35,11 @@ body {
     width: 100%;
 }
 .box2 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -50,11 +50,11 @@ body {
     width: 100%;
 }
 .box3 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -65,11 +65,11 @@ body {
     width: 100%;
 }
 .box4 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -80,11 +80,11 @@ body {
     width: 100%;
 }
 .box5 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -95,11 +95,11 @@ body {
     width: 100%;
 }
 .box6 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -110,11 +110,11 @@ body {
     width: 100%;
 }
 .box7 a{
-    width: 240px;
-    height: 300px;
+    width: 200px;
+    height: 240px;
     padding: 8px;
-    margin-left: 60px;
-    margin-top: 30px;
+    margin-left: 70px;
+    margin-top: 0px;
     /* border: solid 4px red; */
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ body {
 }
 .box1 {
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -134,7 +134,7 @@ body {
 }
 .box2{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -142,7 +142,7 @@ body {
 }
 .box3{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -150,7 +150,7 @@ body {
 }
 .box4{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -158,7 +158,7 @@ body {
 }
 .box5{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -166,7 +166,7 @@ body {
 }
 .box6{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -174,7 +174,7 @@ body {
 }
 .box7{
     width: 100%;
-    height: 400px;
+    height: 360px;
     background-color: rgb(255, 255, 255);
     display: flex;
     /* border: solid 4px red; */
@@ -530,7 +530,7 @@ body{
 }
 
 .pic1 {
-    width: 80px;
+    width: 70px;
     height: 50px;
     padding: 16px;
     margin-top: 16px;
@@ -550,4 +550,24 @@ body{
     .sub-container{
         display: none;
     }
+}
+
+#scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+.scroll-content {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px;
 }
