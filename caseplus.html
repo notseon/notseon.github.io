@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록</title>
+    <link rel="stylesheet" href="plus.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item2">
+            <div class="item2-1">
+                <div class="item2-2">
+                    <a href="index.html"><img src="symbol_1.png"></a>
+                </div>
+            </div>
+            <div class="item2-3">
+                <a href="time.html">TIME</a>
+                <a href="category-v2.html">CATEGORY</a>
+                <a href="01-1.html">COUNTRY</a>
+                <a href="infinity.html">INFINITY</a>
+                <a href="caseplus.html">CREATE</a>
+            </div>
+        </div>
+        <div class="item3"></div>
+    </div>
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item4">
+            <div class="item4-1">
+                <div class="item4-2">
+                    <div class="pic1"><img src="logo.png"></div>
+                    <a>Please write down the 'unfamiliar' events you think of.</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="item3"></div>
+    </div>
+
+    <div class="container4">
+        <!-- <h1>PLUS NOTSEON</h1> -->
+        <form id="guestbookForm">
+            <label for="name">CASE NAME</label>
+            <input type="text" id="name" placeholder="Please add to the 'NOTSEON' incident I found" name="name"
+                required>
+
+
+            <label for="message">CONTENT</label>
+            <textarea id="message" name="message"
+                placeholder="Please write down about the NOTSEON incident I found. If you write down the details, it's better to record the incident. Add and enjoy various NOTSEON events."
+                rows="14" required></textarea>
+
+            <button type="button" onclick="addEntry()">SUBMIT</button>
+        </form>
+
+        <div id="entries">
+            <!-- 방명록 항목이 여기에 추가됩니다. -->
+        </div>
+    </div>
+
+    <div class="sub-text">
+        <a>모바일에서는 호환되지 않습니다.<br>
+        </a>
+        <a><br>To view the 'NOTSEON' project, please access the address below on the website.<br>
+        </a>
+        <a href="https://notseon.github.io/"><br>"https://notseon.github.io/"</a>
+    </div>
+    <div class="sub2-text">
+        <a>넓은 화면에서 지원합니다. 화면사이즈를 키워주세요.<br>
+        </a>
+        <a><br>To view the 'NOTSEON' project, please access the address below on the website.<br>
+        </a>
+        <a href="https://notseon.github.io/"><br>"https://notseon.github.io/"</a>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+
+        })
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+        })
+
+    </script>
+
+    <script>
+        function addEntry() {
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+
+            if (name && message) {
+                var entry = document.createElement("div");
+                entry.className = "entry";
+                entry.innerHTML = "<strong>" + name + ":</strong> " + message;
+
+                document.getElementById("entries").appendChild(entry);
+
+                // Clear the form fields
+                document.getElementById("name").value = "";
+                document.getElementById("message").value = "";
+            } else {
+                alert("PLEASE WRITE CASENAME.");
+            }
+        }
+    </script>
+</body>
+
+</html>
